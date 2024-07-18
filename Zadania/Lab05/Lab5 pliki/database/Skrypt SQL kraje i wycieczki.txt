@@ -1,0 +1,14 @@
+INSERT INTO kraje (nazwa, kod_iso, waluta, powierzchnia_calkowita_km2, jezyk_urzedowy) VALUES
+('USA', 'US', 'USD', 9833520, 'Angielski'),
+('Chiny', 'CN', 'CNY', 9596961, 'Chiński'),
+('Austria', 'AT', 'EUR', 83871, 'Niemiecki'),
+('Niemcy', 'DE', 'EUR', 357022, 'Niemiecki'),
+('Francja', 'FR', 'EUR', 643801, 'Francuski'),
+('Włochy', 'IT', 'EUR', 301340, 'Włoski'),
+('Hiszpania', 'ES', 'EUR', 505990, 'Hiszpański');
+
+INSERT INTO wycieczki (nazwa, kontynent, okres_trwania_dni, opis_miejsca, cena, nazwa_obrazka, kraj_id) VALUES
+('Kolorado', 'Ameryka Północna', 7, 'Jest wyżynno-górzystym stanem, którego średnia wysokość nad poziomem morza przekracza 2000 m. Najwyższy szczyt Kolorado, Mount Elbert, wznosi się na 4399 m n.p.m.', 19000, 'colorado.jpg', (SELECT id FROM kraje WHERE nazwa='USA')),
+('Alaska', 'Ameryka Północna', 10, 'Pasmo górskie w Ameryce Północnej w stanie Alaska. Jest to najwyższa część łańcucha Kordylierów z najwyższym szczytem kontynentu - Denali (McKinley) (6194 m n.p.m.).', 24000, 'alaska.jpg', (SELECT id FROM kraje WHERE nazwa='USA')),
+('Everest', 'Azja', 7, 'Najwyższy szczyt Ziemi (8848 m n.p.m., podaje się też wysokość 8844 lub 8850), ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i Tybetu.', 22000, 'everest.jpg', (SELECT id FROM kraje WHERE nazwa='Chiny')),
+('Alpy', 'Europa', 6, 'Najwyższy łańcuch górski Europy, ciągnący się łukiem od wybrzeża Morza Śródziemnego w okolicy Savony po dolinę Dunaju w okolicach Wiednia.', 16000, 'alps.jpg', (SELECT id FROM kraje WHERE nazwa='Austria'));

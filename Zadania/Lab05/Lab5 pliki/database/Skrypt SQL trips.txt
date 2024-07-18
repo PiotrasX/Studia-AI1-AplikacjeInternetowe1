@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS trips;
+USE trips;
+
+CREATE TABLE kraje (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nazwa VARCHAR(255) NOT NULL,
+    kod_iso CHAR(2) NOT NULL,
+    waluta VARCHAR(3) NOT NULL,
+    powierzchnia_calkowita_km2 DOUBLE NOT NULL,
+    jezyk_urzedowy VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE wycieczki (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nazwa VARCHAR(255) NOT NULL,
+    kontynent VARCHAR(255) NOT NULL,
+    okres_trwania_dni INT NOT NULL,
+    opis_miejsca TEXT NOT NULL,
+    cena DECIMAL(10, 2) NOT NULL,
+    nazwa_obrazka VARCHAR(255),
+    kraj_id INT,
+    FOREIGN KEY (kraj_id) REFERENCES kraje(id)
+);
