@@ -16,7 +16,7 @@ Repozytorium zawiera rozwiązania zadań opracowane w ramach przedmiotu **Aplika
 ## ⚙️ Wykorzystane technologie
 
 - `Technologie:` HTML5, Bootstrap 5, PHP 8, MySQL.  
-- `Frameworki:` Laravel.  
+- `Frameworki:` Laravel 1.  
 - `Środowiska programistyczne (IDE):` Visual Studio Code.  
 
 ---
