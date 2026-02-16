@@ -8,8 +8,8 @@ Repozytorium zawiera rozwiązania zadań opracowane w ramach przedmiotu **Aplika
 
 ## 📁 Struktura repozytorium
 
-- `Zadania/LabX` – Zadania realizowane podczas zajęć laboratoryjnych. Obejmują tworzenie aplikacji internetowych z wykorzystaniem HTML, Bootstrap 5 oraz PHP 8. Materiał zawiera ćwiczenia z zakresu obsługi formularzy, walidacji danych, pracy z protokołem HTTP, wykorzystania PDO do komunikacji z bazą danych oraz podstaw szablonów Twig i frameworka Laravel.  
-- `Zadania/Realizacja projektu` – Projekt końcowy przedmiotu obejmujący stworzenie aplikacji internetowej z wykorzystaniem PHP oraz elementów architektury MVC. Projekt zawiera obsługę logiki biznesowej, komunikację z bazą danych, walidację danych wejściowych oraz generowanie dynamicznych widoków.  
+- `Zadania/LabX` – Zadania realizowane podczas zajęć laboratoryjnych. Obejmują tworzenie aplikacji internetowych w PHP 8 z wykorzystaniem HTML5 oraz Bootstrap 5 jako warstwy prezentacji. W ramach laboratoriów realizowano obsługę żądań HTTP, przetwarzanie formularzy oraz walidację danych po stronie serwera. Ćwiczenia obejmowały komunikację z bazą danych przy użyciu PDO (połączenie z bazą, zapytania przygotowane, operacje CRUD), generowanie dynamicznych widoków, a także wprowadzenie do szablonów Twig i podstaw działania frameworka Laravel.  
+- `Zadania/Realizacja projektu` – Projekt końcowy przedmiotu polegający na stworzeniu kompletnej aplikacji internetowej w oparciu o PHP oraz elementy architektury MVC. Aplikacja została podzielona na warstwę modelu, kontrolera oraz widoku. Projekt obejmuje implementację operacji CRUD, walidację i filtrowanie danych wejściowych, separację logiki biznesowej od warstwy prezentacji oraz integrację z interfejsem użytkownika opartym na Bootstrap.  
 
 ---
 
@@ -23,14 +23,19 @@ Repozytorium zawiera rozwiązania zadań opracowane w ramach przedmiotu **Aplika
 
 ## 🔍 Zakres tematyczny
 
-- Tworzenie dynamicznych stron internetowych w PHP.  
-- Obsługa formularzy i walidacja danych.  
+- Tworzenie dynamicznych aplikacji internetowych w PHP.  
 - Praca z protokołem HTTP (GET, POST, PUT, DELETE).  
-- Komunikacja z bazą danych przy użyciu PDO.  
-- Podstawy architektury MVC.  
-- Wykorzystanie szablonów Twig.  
-- Wprowadzenie do frameworka Laravel.  
-- Integracja front-endu (Bootstrap) z logiką serwera.  
+- Przetwarzanie formularzy i walidacja danych.  
+- Komunikacja z bazą danych przy użyciu PDO (PHP Data Objects):  
+  - Bezpieczne wykonywanie zapytań.  
+  - Bindowanie parametrów.  
+  - Obsługa wyjątków.  
+  - Operacje CRUD (Create, Read, Update, Delete).  
+  - Zabezpieczanie aplikacji przed SQL Injection.  
+- Podstawy architektury MVC (Model–View–Controller):  
+  - Model – logika dostępu do danych i operacje na bazie danych.  
+  - View – generowanie widoków HTML.  
+  - Controller – obsługa żądań HTTP i przekazywanie danych między warstwami.  
 
 ---
 
